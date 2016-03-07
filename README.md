@@ -17,6 +17,7 @@ From [Wikipedia](https://en.wikipedia.org/wiki/GlobalView):
 ## Usage
 
 - clone this repo
+- install [QEMU](http://wiki.qemu.org/Main_Page)
 - `./run.sh`
 
 ![](screen.gif)
