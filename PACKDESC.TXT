@@ -1,0 +1,763 @@
+COMMENT
+COMMENT File:    WorksPls.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+ 
+PACKAGE WORKSPLS WorksPlus
+    GROUP GV Workspace
+        MODULE Workspace Essentials
+            Fetch User BWSGUAM.BOO
+            SET BOOT User Oy{|}\346\347\350\377 Y
+
+            DecodeRename Fetch User 1ASCIKEY.PCT ASCIIKeyboardPicture.bits
+            Data User 1BCKGRND.MES
+            Data User 1BASDIR.MES
+            Data User 1BUFCAHR.TAB
+            DecodeRename Fetch User 1BWSLODR.MES BWSLoader.messages
+            Data User 1BWSMESG.MES
+            Data User 1COLORDT.MES
+            DecodeRename Fetch User 1CRB50US.MES ColorBWS.5.0.US.messages
+            DecodeRename Fetch User 1WINHIDE.MES WindowHide.messages
+            Data User 1CPYMODE.MOU
+            DecodeRename Fetch User 1CSR10KY.BTY CursorTenKeypad.brush
+            Data User 1DBKENGL.KB
+            DecodeRename Fetch User 1DEFKBD.BTY DefaultKeyboard.geometry
+            DecodeRename Fetch User 1DEF10KY.BTY DefaultDoveTenKeypad.brush
+            Data User 1DEFUSRP.LET
+            Data User 1DEFUSRP.OFI
+            Data User 1DESKTOP.MES
+            Data User 1DRECTRY.ICO
+            Data User 1DSW46US.MES
+            Data User 1FILDRAW.MES
+            Data User 1FOLDER.MES
+            Data User 1HLPKEYT.IPC
+            Data User 1KEYBDKE.Y
+            DecodeRename Fetch User 1KEYPAD.BTY Keypad.geometry
+            Data User 1MENUT.IPC
+            Data User 1MVMOMOU.IPC
+            Data User 1MULTNAT.MES
+            Data User 1NOTIFIC.MES
+            Data User 1NRMBACK.IPC
+            Data User 1NRMKEYT.IPC
+            Data User 1NRMMOUS.IPC
+            DecodeRename Fetch User 1NRMSIDE.IPC NormalSideKeys.TIPC
+            Data User 1NRMSOFT.IPC
+            Data User 1PCFILSY.ICO
+            Data User 1PRDFACT.CCH
+            Data User 1PRDFACT.MES
+            Data User 1SMASMMT.IPC
+            Data User 1SRVERRT.MES
+            Data User 1SMPEDIT.MES
+            Data User 1SINGLES.MES
+            Data User 1STNDARD.ICO
+            Data User 1SWS.MES
+            Data User 1SYSTMNV.FNT
+            Data User 1UNDOKEY.IPC
+            Data User 1WRKSTAT.PRO
+            Data User 1WSTBASK.MES
+            Data User 1XCOMSFT.MES
+            DecodeRename Fetch User 2GVWINK.EYS Keyboards
+            Data User 1XRXGVBR.USH
+                   
+            Data User CLIPBOAR.D
+            Data User 2CNVCOMM.SWR
+            Data User 2CUSP
+            Data User DRAGANDD.ROP
+            Data User 2DSKSPCW.ARN
+            Data User 2DOCCOMM.SWR
+            Data User 2FELDCON.TNT
+            Data User 2FLPTOOL.MD
+            Data User 2FNTMANA.GER
+            Data User HELP
+            Data User 2HYPCOMM.SWR
+            Data User 2INTERPR.ESS
+            Data User 2INTRSCR.CNV
+            Data User 2LOGON
+            Data User 2MULTLIN.GST
+            Data User 2PRTCOMM.SWR
+            Data User 2STPCOMM.SWR
+            Data User 2TABLWIN.DOW
+            Data User 2WRKSTAT.KEY
+            Data User 2WSWINDW.CTR
+            Data User SCROLLM.ENU
+            Data User QUICKRES.TRT
+            Data User XEROXCOL.ORS
+            Data User 2NETWORK.ACC
+            Data User 2MICROCD.TRP
+            Data User 2MAILCOM.SWR
+            Data User 2TEMUCOM.SWR
+            Data User 2VMEXPAN.UTL
+            Data User PCFILACC.ESS
+            Data User SORTMENU
+            Data User 2DIAGNST.ICS
+            Data User SHOWCOL.MOD
+            Data User FILFMLST.CMP
+            Data User FILFMLST.DAT
+            Data User WFWDFILE.CMP
+            Data User WFWDFILE.DAT
+
+            installfile gv000001.dat
+            installfile gv000002.dat
+            installfile gv000003.dat
+            installfile gv000004.dat
+            installfile gv000005.dat
+            installfile gv000006.dat
+            installfile gv000007.dat
+            installfile gv000008.dat
+            installfile gv000009.dat
+            installfile gv000010.dat
+            installfile gv000011.dat
+            installfile gv000012.dat
+            installfile gv000013.dat
+            installfile gv000014.dat
+            installfile gv000015.dat
+            installfile gv000016.dat
+            installfile gv000017.dat
+            installfile gv000018.dat
+            installfile gv000019.dat
+            installfile gv000020.dat
+            installfile gv000021.dat
+            installfile gv000022.dat
+            installfile gv000023.dat
+            installfile gv000024.dat
+            installfile gv000025.dat
+
+            pcdata f386 destination
+            pcdata fbinw destination
+            pcdata fdll destination
+            pcdata fexe destination
+            pcdata fgvw destination
+            pcdata fhlp destination
+            pcdata fkbd destination
+            pcdata fnet destination
+            pcdata fsetup destination
+            pcdata fsys destination
+            pcdata fgdi destination
+            pcdata fvr c:\vr
+
+        MODULE Workspace Write
+            Data User GVWRITE
+            Data User OPENDOCP.RNT
+
+    GROUP WorksPlus Applications
+        MODULE Container List Tool
+                Data User CONTLIST.TOO
+        MODULE CUSP Buttons
+                Data User CUSPBUTT.ONS
+        MODULE Extract Rules
+                Data User EXTRACTR.ULE
+        MODULE Footnotes
+                Data User FOOTNOTE.S
+        MODULE GV Draw
+                Data User GVDRAW
+                Data User 2RASTERC.ORE
+        MODULE GV Equations
+                Data User GVEQUATI.ONS
+        MODULE GV Chart
+                Data User GVCHART
+        MODULE GV Paint
+                Data User GVPAINT
+                Data User 2RASTERC.ORE
+        MODULE Illustrator from HPGL Converter
+                Data User ILFMHPGL.CNV
+        MODULE Illustrator Basics
+                Data User ILLUSBAS.ICS
+        MODULE Index Generator
+                Data User INDEXGEN.ERA
+        MODULE Keyboard Accelerators
+                Data User KEYACELR.ATR
+        MODULE Link To Visual Recall
+                Data User LNKVISRE.CAL
+        MODULE Spelling Checker
+                Data User SPELLCHE.KER
+        MODULE U.S. English Hyphenation
+                Data User USENGLSH.HYP
+        MODULE U.S. English Lexicons
+                Data User USENGLSH.LEX
+        MODULE Table of Contents Generator
+                Data User TOCGENER.ATR
+        MODULE Thesaurus
+                Data User THESAURU.S
+        MODULE Vertical Writing
+                Data User VERTWRIT.ING
+        MODULE Xerox Highlight Printer Colors
+                Data User XHIPRINT.COL
+
+    GROUP Desktop Printing
+                Data User 2PDLCOMM.SWR
+                Data User 2LPCOMM.SWR
+                pcdata ttfontsmod c:\ttfonts
+                pcdata ttfontsmodb c:\ttfonts
+                pcdata ttfontsmodi c:\ttfonts
+                pcdata ttfontsmodbi c:\ttfonts
+                pcdata ttfontsclas c:\ttfonts
+                pcdata ttfontsclasb c:\ttfonts
+                pcdata ttfontsclasi c:\ttfonts
+                pcdata ttfontsclasbi c:\ttfonts
+                pcdata ttfontseq c:\ttfonts
+        MODULE LP LJ2 Printing
+                Data User LPLJ2.PR      
+        MODULE LP LJ4 Printing
+                Data User LPLJ4.PR
+        MODULE LP Versatec C2700 Printing
+                Data User LPVRC270.0PR
+        MODULE LP 4030 LJ2 Printing
+                Data User LP4030LJ.2PR
+        MODULE LP 4030 XES Printing
+                Data User LP4030XE.SPR
+        MODULE LP 4045 Printing
+                Data User LP4045.PR
+        MODULE LP Windows Printing
+                Data User LPWINPRI.NTG
+
+    GROUP PostScript Compatible Print
+          pcdata ffontseq c:\psfonts
+          pcdata ffontsxcm c:\psfonts
+          pcdata ffontsxcb c:\psfonts
+          pcdata ffontsxci c:\psfonts
+          pcdata ffontsxcbi c:\psfonts
+          pcdata ffontsxmm c:\psfonts
+          pcdata ffontsxmb c:\psfonts
+          pcdata ffontsxmi c:\psfonts
+          pcdata ffontsxmbi c:\psfonts
+        MODULE PS Printing
+                Data User PSPRINTI.NG
+
+    GROUP WorksPlus Fonts
+        MODULE VP Xerox Classic Screen Fonts
+                Data User CLASSC06.SFN
+                Data User CLASSC07.SFN
+                Data User CLASSC08.SFN
+                Data User CLASSC09.SFN
+                Data User CLASSC10.SFN
+                Data User CLASSC11.SFN
+                Data User CLASSC12.SFN
+                Data User CLASSC14.SFN
+                Data User CLASSC18.SFN
+                Data User CLASSC24.SFN
+                Data User CLASSC30.SFN
+                Data User CLASSC36.SFN
+                Data User CLASMETR.SFN
+        MODULE VP Xerox Modern Screen Fonts
+                Data User MODERN06.SFN
+                Data User MODERN07.SFN
+                Data User MODERN08.SFN
+                Data User MODERN09.SFN
+                Data User MODERN10.SFN
+                Data User MODERN11.SFN
+                Data User MODERN12.SFN
+                Data User MODERN14.SFN
+                Data User MODERN18.SFN
+                Data User MODERN24.SFN
+                Data User MODERN30.SFN
+                Data User MODERN36.SFN
+                Data User MODRMETR.SFN
+        MODULE VP Xerox Classic Thin Fonts
+                Data User CLASTHIN.SFN
+        MODULE VP Xerox Equation Fonts
+                Data User EQUATION.SFN
+        MODULE VP CG-CS Century Schoolbook Fonts Widths
+                Data User CENTURY.FNW
+        MODULE VP CG-CS Courier Fonts Widths
+                Data User COURIER.FNW
+        MODULE VP CG-CS Omega Fonts Widths
+                Data User OMEGA.FNW
+        MODULE VP CG-CS Palacio Fonts Widths
+                Data User PALACIO.FNW
+        MODULE VP CG-CS Times Fonts Widths
+                Data User TIMES.FNW
+        MODULE VP CG-CS Triumvirate Condensed Fonts Widths
+                Data User TRIUMCND.FNW
+        MODULE VP CG-CS Triumvirate Fonts Widths
+                Data User TRIUMVIR.FNW
+        MODULE VP Helvetica 300 Fonts Widths
+                Data User HELVE300.FNW
+        MODULE VP Optima 300 Fonts Widths
+                Data User OPTIM300.FNW
+        MODULE VP Times 300 Fonts Widths
+                Data User TIMES300.FNW
+        MODULE VP Univers 300 Fonts Widths
+                Data User UNIVE300.FNW
+        MODULE VP URW-ITC Avant Garde Gothic Fonts Widths
+                Data User AVANTGRD.FNW
+        MODULE VP URW-ITC Bookman Fonts Widths
+                Data User BOOKMAN.FNW
+        MODULE VP URW-ITC Garamond Fonts Widths
+                Data User GARAMOND.FNW
+        MODULE VP URW-ITC Souvenir Fonts Widths
+                Data User SOUVENIR.FNW
+        MODULE VP Xerox Equation Fonts Widths
+                Data User EQUATION.FNW
+        MODULE VP Xerox Quartz Fonts Widths
+                Data User QUARTZ.FNW
+        MODULE VP LT-Helvetica Fonts Widths
+                Data User LSHELVTA.FNW
+        MODULE VP MT-Monotype Bodoni Fonts Widths
+                Data User MONOBODO.FNW
+        MODULE VP URW-ITC New Baskerville Fonts Widths
+                Data User NEWBASK.FNW
+        MODULE VP URW-ITC Zapf Chancery Fonts Widths
+                Data User ZAPFCHAN.FNW
+        MODULE VP URW-ITC Zapf Dingbats Fonts Widths
+                Data User ZAPFDING.FNW
+        MODULE VP CG-CS Letter Gothic Fonts Widths
+                Data User LETGOTHC.FNW
+        MODULE VP CG-CS Symbol Fonts Widths
+                Data User SYMBOL.FNW
+        MODULE VP LT-Univers Fonts Widths
+                Data User LTUNIVER.FNW
+
+    GROUP File Conversion
+        pcdata fconvdll destination
+        MODULE File Conversion of Lotus 1-2-3 Spreadsheets
+                Data User FCOF123S.DSH
+        MODULE File Conversion of 860 Documents
+                Data User FCOF860D.OCS
+        MODULE File Conversion of CGM Documents
+                Data User FCOFCGMD.OCS
+        MODULE File Conversion of ODA Documents
+                Data User FCOFODAD.OCS
+        MODULE File Conversion of Raster Graphics
+                Data User FCOFRAST.GRA
+        MODULE File Conversion of XIF Documents
+                Data User FCOFXIFD.OCS
+        MODULE Link To Mastersoft Word for Word
+                Data User GVLNK2MS.WFW
+        MODULE XIF Basics
+                Data User XIFBASIC.S
+
+    GROUP International Supplement Applications
+        MODULE VP Albanian Keyboard
+                Data User ALBANIAN.KEY
+        MODULE VP Azerbaijani Keyboard
+                Data User AZERJONI.KEY
+        MODULE VP Brazilian Keyboard
+                Data User BRAZIL.KEY
+        MODULE VP Bulgarian Keyboard
+                Data User BULGARIA.KEY
+        MODULE VP Czech Keyboard
+                Data User CZECH.KEY
+        MODULE VP Estonian Keyboard
+                Data User ESTONIAN.KEY
+        MODULE VP European II Keyboard
+                Data User EUROP2.KEY
+        MODULE VP Hausa Keyboard
+                Data User HAUSA.KEY
+        MODULE VP Hungarian Keyboard
+                Data User HUNGARIA.KEY
+        MODULE VP Indonesian Keyboard
+                Data User INDONESA.KEY
+        MODULE VP Latvian Keyboard
+                Data User LATVIAN.KEY
+        MODULE VP Lithuanian Keyboard
+                Data User LITHUANN.KEY
+        MODULE VP Polish Keyboard
+                Data User POLISH.KEY
+        MODULE VP Portuguese Keyboard
+                Data User PORTUGES.KEY
+        MODULE VP Romanian Keyboard
+                Data User ROMANIAN.KEY
+        MODULE VP Russian Keyboard
+                Data User RUSSIAN.KEY
+        MODULE VP Serbo-Croatian Keyboard
+                Data User SERBCROT.KEY
+        MODULE VP Slovak Keyboard
+                Data User SLOVAK.KEY
+        MODULE VP Slovene Keyboard
+                Data User SLOVENE.KEY
+        MODULE VP Turkish Keyboard
+                Data User TURKISH.KEY
+        MODULE VP U.S. Turkish Keyboard
+                Data User USTURK.KEY
+        MODULE VP Ukrainian Keyboard
+                Data User UKRANIAN.KEY
+        MODULE VP Uzbek Keyboard
+                Data User UZBEK.KEY
+        MODULE VP Vietnamese Keyboard
+                Data User VIETNAM.KEY
+
+        MODULE Danish Hyphenation
+                Data User DANISH.HYP
+        MODULE Danish Lexicon
+                Data User DANISH.LEX
+        MODULE Dutch Hyphenation
+                Data User DUTCH.HYP
+        MODULE Dutch Lexicon
+                Data User DUTCH.LEX
+        MODULE Finnish Hyphenation
+                Data User FINNISH.HYP
+        MODULE French Hyphenation
+                Data User FRENCH.HYP
+        MODULE French Lexicon
+                Data User FRENCH.LEX
+        MODULE German Hyphenation
+                Data User GERMAN.HYP
+        MODULE German Lexicon
+                Data User GERMAN.LEX
+        MODULE Italian Hyphenation
+                Data User ITALIAN.HYP
+        MODULE Italian Lexicon
+                Data User ITALIAN.LEX
+        MODULE Norwegian Hyphenation
+                Data User NORWEGIA.HYP
+        MODULE Portuguese Hyphenation
+                Data User PORTUGES.HYP
+        MODULE Portuguese Lexicon
+                Data User PORTUGES.LEX
+        MODULE Spanish Hyphenation
+                Data User SPANISH.HYP
+        MODULE Spanish Lexicon
+                Data User SPANISH.LEX
+        MODULE Swedish Hyphenation
+                Data User SWEDISH.HYP
+        MODULE Swedish Lexicon
+                Data User SWEDISH.LEX
+        MODULE UK English Hyphenation
+                Data User UKENGLSH.HYP
+        MODULE UK English Lexicon
+                Data User UKENGLSH.LEX
+
+    GROUP Illustrator Applications
+        MODULE GV Chemical Illustrator
+                Data User GVCHEMIL.LUS
+        MODULE GV Pro Illustrator
+                Data User GVPROILL.UST
+        MODULE Pro Illustrator Conversion of GV Draw
+                Data User ILCNVGVD.RAW
+        MODULE GV Pro Illustrator from IGES Converter
+                Data User ILFMIGES.CNV
+        MODULE GV Pro Illustrator to IGES Converter
+                Data User ILTOIGES.CNV
+
+    GROUP Arabic Applications
+        MODULE GV Arabic Text Package
+                Data User GVARABIC.TXT
+        MODULE VP Arabic Classic Fonts
+                Data User ARBCLASS.SFN
+        MODULE VP Arabic Modern Fonts
+                Data User ARBMODRN.SFN
+
+    GROUP Hebrew Applications
+        MODULE GV Hebrew Text Package
+                Data User GVHEBREW.TXT
+        MODULE VP Hebrew Classic Fonts
+                Data User HBWCLASS.SFN
+        MODULE VP Hebrew Modern Fonts
+                Data User HBWMODRN.SFN
+
+    GROUP Database Access Software
+        MODULE GV Database Access
+                Data User GVDBASE.ACC
+COMMENT MODULE Database Common Software
+                Data User DBCOMM.SWR
+                pcdata fexe destination
+
+    GROUP Chinese and Japanese Applications
+        MODULE GV Chinese Text Capability
+                DecodeRename Fetch User 1USELWSP.FIL WorkstationProfile
+                Data User EXTDLANG.OPT
+                Data User GVCHINES.TXT
+        MODULE VP Chinese Classic Fonts
+                Data User CHINCLAS.SFN
+        MODULE VP Chinese Modern Fonts
+                Data User CHINMODR.SFN
+        MODULE GV Japanese Text Capability
+                DecodeRename Fetch User 1USELWSP.FIL WorkstationProfile
+                Data User EXTDLANG.OPT
+                Data User GVJAPAN.TXT
+        MODULE VP Japanese Classic Fonts
+                Data User JPNCLASS.SFN
+
+COMMENT *** END OF WORKSPLS PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    FntSupp.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+ 
+PACKAGE FNTSUPP WorksPlus Font Supplement
+    GROUP Screen Fonts
+        MODULE VP CG-CS Courier Fonts
+                Data User CORIER08.SFN
+                Data User CORIER10.SFN
+                Data User CORIER12.SFN
+
+        MODULE VP CG-CS Symbol Fonts
+                Data User SYMBOL09.SFN
+                Data User SYMBOL10.SFN
+                Data User SYMBOL11.SFN
+                Data User SYMBOL12.SFN
+                Data User SYMBOL14.SFN
+                Data User SYMBOL18.SFN
+                Data User SYMBOL24.SFN
+                Data User SYMBOL30.SFN
+                Data User SYMBOL36.SFN
+
+        MODULE VP CG-CS Times Fonts
+                Data User TIMES06.SFN
+                Data User TIMES07.SFN
+                Data User TIMES08.SFN
+                Data User TIMES09.SFN
+                Data User TIMES10.SFN
+                Data User TIMES11.SFN
+                Data User TIMES12.SFN
+                Data User TIMES14.SFN
+                Data User TIMES18.SFN
+                Data User TIMES24.SFN
+                Data User TIMES30.SFN
+                Data User TIMES36.SFN
+
+        MODULE VP CG-CS Triumvirate Condensed Fonts
+                Data User TRIUMC06.SFN
+                Data User TRIUMC07.SFN
+                Data User TRIUMC08.SFN
+                Data User TRIUMC09.SFN
+                Data User TRIUMC10.SFN
+                Data User TRIUMC11.SFN
+                Data User TRIUMC12.SFN
+                Data User TRIUMC14.SFN
+                Data User TRIUMC18.SFN
+                Data User TRIUMC24.SFN
+                Data User TRIUMC30.SFN
+                Data User TRIUMC36.SFN
+
+        MODULE VP CG-CS Triumvirate Fonts
+                Data User TRIUM06.SFN
+                Data User TRIUM07.SFN
+                Data User TRIUM08.SFN
+                Data User TRIUM09.SFN
+                Data User TRIUM10.SFN
+                Data User TRIUM11.SFN
+                Data User TRIUM12.SFN
+                Data User TRIUM14.SFN
+                Data User TRIUM18.SFN
+                Data User TRIUM24.SFN
+                Data User TRIUM30.SFN
+                Data User TRIUM36.SFN
+
+        MODULE VP Optima 300 Fonts
+                Data User OPTIMA06.SFN
+                Data User OPTIMA07.SFN
+                Data User OPTIMA08.SFN
+                Data User OPTIMA09.SFN
+                Data User OPTIMA10.SFN
+                Data User OPTIMA11.SFN
+                Data User OPTIMA12.SFN
+                Data User OPTIMA14.SFN
+                Data User OPTIMA18.SFN
+                Data User OPTIMA24.SFN
+
+        MODULE VP PC Emulation Fonts
+                Data User PCEMULAT.SFN
+        MODULE VP Printwheel Fonts
+                Data User PRNTWHEL.SFN
+        MODULE VP Terminal Fonts
+                Data User TERMINAL.SFN
+
+        MODULE VP URW-ITC Souvenir Fonts
+                Data User SOUVNR06.SFN
+                Data User SOUVNR07.SFN
+                Data User SOUVNR08.SFN
+                Data User SOUVNR09.SFN
+                Data User SOUVNR10.SFN
+                Data User SOUVNR11.SFN
+                Data User SOUVNR12.SFN
+                Data User SOUVNR14.SFN
+                Data User SOUVNR18.SFN
+                Data User SOUVNR24.SFN
+                Data User SOUVNR30.SFN
+                Data User SOUVNR36.SFN
+
+        MODULE VP URW-ITC Zapf Chancery
+                Data User ZCHANC06.SFN
+                Data User ZCHANC07.SFN
+                Data User ZCHANC08.SFN
+                Data User ZCHANC09.SFN
+                Data User ZCHANC10.SFN
+                Data User ZCHANC11.SFN
+                Data User ZCHANC12.SFN
+                Data User ZCHANC14.SFN
+                Data User ZCHANC18.SFN
+                Data User ZCHANC24.SFN
+                Data User ZCHANC30.SFN
+                Data User ZCHANC36.SFN
+
+        MODULE VP URW-ITC Zapf Dingbats
+                Data User ZDINGB09.SFN
+                Data User ZDINGB10.SFN
+                Data User ZDINGB11.SFN
+                Data User ZDINGB12.SFN
+                Data User ZDINGB14.SFN
+                Data User ZDINGB18.SFN
+                Data User ZDINGB24.SFN
+                Data User ZDINGB30.SFN
+                Data User ZDINGB36.SFN
+
+        MODULE VP Xerox Quartz Fonts
+                Data User QUARTZ06.SFN
+                Data User QUARTZ07.SFN
+                Data User QUARTZ08.SFN
+                Data User QUARTZ09.SFN
+                Data User QUARTZ10.SFN
+                Data User QUARTZ11.SFN
+                Data User QUARTZ12.SFN
+                Data User QUARTZ14.SFN
+                Data User QUARTZ18.SFN
+                Data User QUARTZ24.SFN
+
+COMMENT *** END OF FNTSUPP PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    Docbasc.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+ 
+PACKAGE DOCSERVBASIC Document Services Access Basic
+    GROUP Document Services Access Basic Applications
+        MODULE Cover Sheet Mail Agent
+                Data User COVSHTML.AGT
+        MODULE Mail
+                Data User MAIL
+        MODULE Object Conversion Utility
+                Data User OBJCONVU.TIL
+        MODULE Reference Icons
+                Data User REFERIC.ONS
+        MODULE Remote Printing
+                Data User REMPRINT.ING
+
+COMMENT *** END OF DOCSERVBASIC PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    DocServ.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+
+PACKAGE DOCSERV Document Services Access Advanced
+    GROUP Document Services Access Advanced Applications
+        MODULE GV Shared Books
+                Data User GVSHARED.BKS
+        MODULE Remote System Administration
+                Data User REMSYSAD.MIN
+                Data User ASYNCTER.BSW
+
+
+COMMENT *** END OF DOCSERV PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    Analyst.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+ 
+PACKAGE ANALYST GV Analyst
+    GROUP Analyst Applications
+        MODULE GV Calc
+                Data User GVCALC
+        MODULE GV Data Capture
+                Data User GVDATA.CAP
+        MODULE GV List
+                Data User GVLIST
+        MODULE GV ViewCards
+                Data User GVVIEWCA.RDS
+        MODULE ViewCards Conversion of GV Write
+                Data User VCCNVGVW.RIT
+        MODULE ViewCards Graphics Option
+                Data User VCGRAPHI.OPT
+        MODULE ViewCards TableCard Option
+                Data User VCTABCRD.OPT
+        MODULE ViewCards Upgrader
+                Data User VCUPGRAD.ER
+
+COMMENT *** END OF ANALYST PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    Illustra.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+ 
+PACKAGE ILLUSTRA GV Illustrator
+    GROUP Illustrator Applications
+        MODULE GV Chemical Illustrator
+                Data User GVCHEMIL.LUS
+        MODULE GV Pro Illustrator
+                Data User GVPROILL.UST
+        MODULE Pro Illustrator Conversion of GV Draw
+                Data User ILCNVGVD.RAW
+        MODULE GV Pro Illustrator from IGES Converter
+                Data User ILFMIGES.CNV
+        MODULE GV Pro Illustrator to IGES Converter
+                Data User ILTOIGES.CNV
+
+COMMENT *** END OF ILLUSTRA PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    Arabic.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+
+PACKAGE ARABIC GV Arabic
+    GROUP Arabic Applications
+        MODULE GV Arabic Text Package
+                Data User GVARABIC.TXT
+        MODULE VP Arabic Classic Fonts
+                Data User ARBCLASS.SFN
+        MODULE VP Arabic Modern Fonts
+                Data User ARBMODRN.SFN
+
+COMMENT *** END OF ARABIC PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    Hebrew.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+ 
+PACKAGE HEBREW GV Hebrew
+    GROUP Hebrew Applications
+        MODULE GV Hebrew Text Package
+                Data User GVHEBREW.TXT
+        MODULE VP Hebrew Classic Fonts
+                Data User HBWCLASS.SFN
+        MODULE VP Hebrew Modern Fonts
+                Data User HBWMODRN.SFN
+
+COMMENT *** END OF HEBREW PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    ChnJapn.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+
+PACKAGE CHNJAPN Chinese and Japanese
+    GROUP Chinese and Japanese Applications
+        MODULE GV Chinese Text Capability
+                DecodeRename Fetch User 1USELWSP.FIL WorkstationProfile
+                Data User EXTDLANG.OPT
+                Data User GVCHINES.TXT
+        MODULE VP Chinese Classic Fonts
+                Data User CHINCLAS.SFN
+        MODULE VP Chinese Modern Fonts
+                Data User CHINMODR.SFN
+        MODULE GV Japanese Text Capability
+                DecodeRename Fetch User 1USELWSP.FIL WorkstationProfile
+                Data User EXTDLANG.OPT
+                Data User GVJAPAN.TXT
+        MODULE VP Japanese Classic Fonts
+                Data User JPNCLASS.SFN
+
+COMMENT *** END OF CHNJAPN PACKAGE ***
+COMMENT =====================================================================
+COMMENT
+COMMENT File:    DBAccess.txt
+COMMENT Purpose: GVWin custom installation support file
+COMMENT
+
+PACKAGE DBACCESS Database Access
+    GROUP Database Access Software
+        MODULE GV Database Access
+                Data User GVDBASE.ACC
+COMMENT MODULE Database Common Software
+                Data User DBCOMM.SWR
+                pcdata fexe destination
+
+COMMENT *** END OF DBACCESS PACKAGE ***
+COMMENT ====================================================================
+
